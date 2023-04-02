@@ -6,7 +6,7 @@ class Player{
     winner = null
     draw = false
     numberOfGames = 0
-    isPlayingWithBot = true;
+    isPlayingWithBot = false;
     toggle(){
         if (this.currentPlayer === this.player1){
             this.currentPlayer = this.player2
@@ -21,5 +21,13 @@ class Player{
             this.currentPlayer = this.player1
             this.lastStarter = this.player1
         }
+    }
+}
+
+function isPlayingWithBot(state){
+    player.isPlayingWithBot = state
+    const btns = document.getElementsByClassName('linkBtn')
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].classList.toggle('active')
     }
 }
