@@ -25,9 +25,11 @@ class Player{
 }
 
 function isPlayingWithBot(state){
-    player.isPlayingWithBot = state
-    const btns = document.getElementsByClassName('linkBtn')
-    for (let i = 0; i < btns.length; i++) {
-        btns[i].classList.toggle('active')
+    if (player.isPlayingWithBot !== state){
+        player.isPlayingWithBot = state
+        const btns = document.getElementsByClassName('linkBtn')
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].classList.toggle('active')
+        }
     }
 }

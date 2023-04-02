@@ -137,4 +137,10 @@ body{
     #scoreBoard h2{
         font-size: 20px;
     }
+    #gameInfoText{
+        font-size: 24px;
+    }
+    .linkBtn{
+        font-size: 20px;
+    }
 }
