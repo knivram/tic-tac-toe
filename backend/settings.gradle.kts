@@ -1,1 +1,0 @@
-rootProject.name = "ch.mkramer.tic-tac-toe"
